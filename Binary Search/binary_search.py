@@ -7,8 +7,8 @@ def binary_search(list, target):
     first = 0
     last = len(list) - 1
 
-    while first <= last:
-        midpoint = (first + last)//2
+    while first <= last: #check if the list is empty
+        midpoint = (first + last)//2 #Get mid point
         if list[midpoint] == target:
             return midpoint
         elif list[midpoint] < target:
