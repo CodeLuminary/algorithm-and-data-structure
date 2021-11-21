@@ -220,7 +220,7 @@ class Node:
     def __repr__(self):
         return "<Node data: %s>" % self.data
 
-class DoublyLinkedList:
+class DoublyLinkedList: 
     def __init__(self):
         self.head = None
         self.__count = 0
@@ -367,7 +367,6 @@ class DoublyLinkedList:
         while current:
             yield current
             current = current.next_node
-
 
     def __repr__(self):
         """
