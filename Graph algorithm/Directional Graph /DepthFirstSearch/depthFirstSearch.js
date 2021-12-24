@@ -13,6 +13,14 @@ const depthFirstSearch = (graph, source)=>{
     }
 };
 
+//Using recursion
+const depthFirstSearchRecursion = (graph, source)=>{
+    console.log(source);
+    for(let neighbor of graph[source]){
+        depthFirstSearchRecursion(graph,neighbor);
+    }
+}
+
 const graph = {
     a: ['b','c'],
     b: ['d'],
